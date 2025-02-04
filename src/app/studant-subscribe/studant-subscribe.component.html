@@ -1,0 +1,50 @@
+<div class="container">
+  <div class="col-md-12 studDes-div gap-3 d-flex align-items-center">
+    <a routerLink="/overview"> Overview</a>
+    <div>
+      <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5.83244 4.23139L2.00744 0.40639C1.8513 0.25118 1.64009 0.164063 1.41994 0.164062C1.19978 0.164063 0.988571 0.25118 0.832436 0.40639C0.754329 0.483859 0.692334 0.576026 0.650027 0.677576C0.60772 0.779125 0.585938 0.888046 0.585938 0.998056C0.585938 1.10807 0.60772 1.21699 0.650027 1.31854C0.692334 1.42009 0.754329 1.51225 0.832436 1.58972L4.66577 5.40639C4.74388 5.48386 4.80587 5.57603 4.84818 5.67758C4.89049 5.77913 4.91227 5.88805 4.91227 5.99806C4.91227 6.10807 4.89049 6.21699 4.84818 6.31854C4.80587 6.42009 4.74388 6.51226 4.66577 6.58972L0.832436 10.4064C0.675516 10.5622 0.586921 10.774 0.586139 10.9951C0.585358 11.2162 0.672455 11.4286 0.82827 11.5856C0.984085 11.7425 1.19585 11.8311 1.41699 11.8319C1.63813 11.8326 1.85052 11.7455 2.00744 11.5897L5.83244 7.76472C6.3006 7.29597 6.56357 6.66056 6.56357 5.99806C6.56357 5.33556 6.3006 4.70014 5.83244 4.23139V4.23139Z" fill="#7C7C7C" />
+      </svg>
+    </div>
+    <span>Student Subscription</span>
+  </div>
+
+  <ul class="nav nav-tabs d-flex gap-2 mt-3" id="myTab" role="tablist">
+    <li class="nav-item" *ngFor="let tab of tabs">
+      <a class="nav-link"
+         [class.active]="tab === activeTab"
+         (click)="setActiveTab(tab)"
+         [id]="tab.id + '-tab'"
+         role="tab"
+         [attr.aria-controls]="tab.id"
+         [attr.aria-selected]="tab === activeTab">
+        {{ tab.label }}
+      </a>
+    </li>
+  </ul>
+
+  <!-- Table -->
+  <div class="tab-content table-container mt-3" id="myTabContent">
+    <div class="tab-pane fade show active" id="{{ activeTab.id }}" role="tabpanel" [attr.aria-labelledby]="activeTab.id + '-tab'">
+      <table class="custom-table">
+        <thead>
+          <tr>
+            <th>Number of students</th>
+            <th>Month</th>
+            <th>Beginning of subscription</th>
+            <th>End of subscription</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let row of activeTab.data">
+            <td>{{ row.number }}</td>
+            <td>{{ row.month }}</td>
+            <td>{{ row.start }}</td>
+            <td>{{ row.end }}</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="total-students">Total students: <span class="font-weight-bold">{{ activeTab.data.length }}</span> students</div>
+    </div>
+  </div>
+</div>

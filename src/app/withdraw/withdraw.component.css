@@ -1,0 +1,263 @@
+.withdraw-container {
+  font-family: Arial, sans-serif;
+  
+
+}
+
+
+.balance-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f3f4f6;
+  padding: 20px;
+  border-radius: 0px;
+  margin-bottom: 20px;
+}
+
+
+.item2 .card{
+
+  background-color: #4A54AE;
+
+}
+
+
+
+.item2{
+  border: none;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 0px;
+
+}
+
+.item2 .card-title{
+
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 125%;
+  margin-top: 12px;
+
+}
+.item2 .card-text{
+  font-weight: 700;
+  font-size: 48px;
+  color: #fff
+
+}
+
+.item2 .profit-section  span{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  color: #fff;
+  margin-inline: 7px;
+
+
+}
+.item2 p{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  color: #fff;
+  margin-bottom: 0px !important;
+}
+.item2 .card-promo {
+  border-radius: 0px;
+  padding: 16px;
+
+
+}
+.item2 .card-promo span{
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 125%;
+  color: #4a54ae;
+}
+.item2 .card-promo p{
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 125%;
+  color: #7c7c7c;
+
+}
+.card , .card-body {
+  border: none;
+  background-color: transparent;
+  border-radius: 0px;
+}
+
+
+.balance-section .profit h1 {
+  color: #4a90e2;
+  font-size: 36px;
+}
+
+.balance-section .profit h1 span {
+  font-size: 18px;
+}
+
+.balance-section .promo {
+  text-align: right;
+}
+
+.balance-section .promo h3 {
+  color: #6b7280;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.tabs-nav h2{
+  font-weight: 600;
+  font-size: 18px;
+  color: #000;
+}
+.tabs-nav h3{
+  font-weight: 400;
+  font-size: 16px;
+  color: #7c7c7c;
+}
+nav{
+  margin-top: 48px;
+}
+
+.tab-button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s;
+  padding:  -3px 40px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #6936f5;
+  background-color:white ;
+  width: 172px;
+}
+
+
+.tab-button.active {
+  border: 1px solid #6936f5;
+  background-color: white;
+  color: #6936f5;
+  font-weight: bold;
+
+}
+.tabss{
+  margin-top: 16px;
+
+}
+.tab-content {
+  /* padding-b: 20px; */
+  border-radius: 8px;
+  background: #fff;
+  margin-top: 24px;
+}
+
+.tab-content label {
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  color: #7c7c7c;
+}
+
+.tab-content input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+
+}
+
+.tab-content input::placeholder{
+  font-weight: 400;
+  font-size: 12px;
+  color: #7c7c7c;
+}
+
+.submit-button {
+  padding: 10px 15px;
+  background: #4a90e2;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.submit-button:hover {
+  background: #357ab8;
+}
+.btn{
+  padding: 12px 16px;
+  width: 113px;
+  border-radius: 0px;
+  background-color: #4a54ae;
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+  margin-top: 24px;
+
+}
+.history-section {
+  margin-top: 30px;
+}
+.withdrawal-history h3{
+  font-weight: 600;
+  font-size: 18px;
+  color: #000;
+  margin-top: 142px;
+}
+
+.history-section table {
+  margin-top: 16px;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+
+}
+.withdrawal-history thead {
+box-shadow: 0 4px 12px 0 rgba(174, 176, 176, 0.12);
+background-color: #f4f5fa;
+
+
+}
+
+
+.withdrawal-history th{
+  padding-block: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #4a54ae;
+}
+
+.withdrawal-history tbody td{
+  font-weight: 400;
+  font-size: 14px;
+  color: #4a54ae;
+  padding-block:14px !important;
+  border-bottom: 1px solid #f4f5fa;
+  border-left: 1px solid #f4f5fa;
+  border-right: 1px solid #f4f5fa
+}
+.withdrawal-history p{
+  font-weight: 400;
+font-size: 16px;
+color: #4a54ae;
+margin-top: 19px;
+
+}
+.withdrawal-history p span{
+  font-weight: 700;
+}
+
+
+

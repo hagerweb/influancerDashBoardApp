@@ -1,0 +1,32 @@
+.side-content a {
+  text-decoration: none;
+  margin-top: 50px;
+}
+
+.side-content .side-text {
+  font-weight: 400;
+  font-size: 14px;
+  color: #4a54ae;
+  margin-top: 16px;
+}
+
+.svg-active {
+  border-radius: 24px;
+  width: 48px;
+  height: 48px;
+  color: #4a54ae;
+  transition: 0.1s all;
+}
+
+.svg-active path {
+  fill: #4a54ae;
+  transition: 0.5s all;
+}
+
+.active-link .svg-active {
+  background: #4a54ae;
+}
+
+.active-link .svg-active path {
+  fill: white;
+}
