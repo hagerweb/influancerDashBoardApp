@@ -4,7 +4,7 @@
       <div class="card  h-100">
         <div class="card-body ">
           <div class="row">
-            <div class="col-6">
+            <div class="col-md-6">
               <h5 class="card-title">Your Profit</h5>
             <div class="d-flex profit-section  align-items-start">
               <h2 class="card-text">200.00</h2>
@@ -15,7 +15,7 @@
 
 
             </div>
-            <div class="col-6">
+            <div class="col-md-6">
               <div class=" bg-white card-promo  d-flex align-items-center">
                 <div>
                   <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -77,14 +77,14 @@
       <div *ngIf="activeTab === 'bank'">
         <form (submit)="submitBankTransfer()">
           <div class="row">
-            <div class="col-6">
+            <div class="col-md-6">
               <div class="form-group">
                 <label for="mobile">Mobile Number</label>
                 <input type="text" placeholder="Mobile Number" id="mobile" [(ngModel)]="bankData.mobile" name="mobile" required />
               </div>
 
             </div>
-            <div class="col-6">
+            <div class="col-md-6">
               <div class="form-group">
                 <label for="accountHolder">Account Holder's Name</label>
                 <input type="text" placeholder="Account Holder's Name" id="accountHolder" [(ngModel)]="bankData.accountHolderName" name="accountHolder" required />
@@ -94,7 +94,7 @@
             </div>
           </div>
           <div class="row ">
-            <div class="col-6">
+            <div class="col-md-6">
               <div class="form-group">
                 <label for="amount">Amount to Withdraw</label>
                 <!-- <input type="number" placeholder="" id="amount" [(ngModel)]="bankData.amount" name="amount" [max]="balance" required /> -->
@@ -118,14 +118,14 @@
       <div *ngIf="activeTab === 'stc'">
         <form (submit)="submitSTC()">
           <div class="row">
-            <div class="col-6">
+            <div class="col-md-6">
               <div class="form-group">
                 <label for="bankName">Bank Name</label>
                 <input placeholder="Bank Name" type="text" id="bankName" [(ngModel)]="stcData.bankName" name="bankName" required />
               </div>
 
             </div>
-            <div class="col-6">
+            <div class="col-md-6">
               <div class="form-group">
                 <label for="accountNumber">Account Number</label>
                 <input placeholder="Account Number" type="text" id="accountNumber" [(ngModel)]="stcData.accountNumber" name="accountNumber" required />
@@ -134,13 +134,13 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-6">
+            <div class="col-md-6">
               <div class="form-group">
                 <label for="iban">Account Holder's Name</label>
                 <input placeholder="Account Holder's Name" type="text" id="iban" [(ngModel)]="stcData.accountHolderName" name="iban" required />
               </div>
             </div>
-            <div class="col-6">
+            <div class="col-md-6">
               <div class="form-group">
                 <label for="amount">IBAN</label>
                 <input placeholder="IBAN" type="number" id="amount" [(ngModel)]="stcData.iban" name="amount" [max]="balance" required />
@@ -150,13 +150,13 @@
           </div>
 
           <div class="row">
-            <div class="col-6">
+            <div class="col-md-6">
               <div class="form-group">
                 <label for="iban">Account Type</label>
                 <input placeholder="Account Type" type="text" id="iban" [(ngModel)]="stcData.accountType" name="iban" required />
               </div>
             </div>
-            <div class="col-6">
+            <div class="col-md-6">
               <div class="form-group">
                 <label for="amount">Amount to Withdraw</label>
                 <!-- <input placeholder="Amount to Withdraw" type="number" id="amount" [(ngModel)]="stcData.amount" name="amount" [max]="balance" required /> -->

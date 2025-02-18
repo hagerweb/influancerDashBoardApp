@@ -14,18 +14,14 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-12">
-          <app-navbar></app-navbar>
+          <app-navbar (toggleMenu)="toggleSidebar()"></app-navbar>
         </div>
-
-
-
       </div>
       <div class="row">
-        <div class="col-1">
-          <app-side-bar></app-side-bar>
-
+        <div class="col-md-1">
+          <app-side-bar [isSidebarVisible]="isSidebarVisible"></app-side-bar>
         </div>
-        <div class="col-11">
+        <div class="col-md-11">
           <router-outlet></router-outlet>
         </div>
       </div>

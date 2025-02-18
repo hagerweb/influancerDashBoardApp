@@ -7,13 +7,12 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { StudantSubscribeComponent } from './studant-subscribe/studant-subscribe.component';
 
 const routes: Routes = [
-  {path:"" , redirectTo:"overview", pathMatch:"full"},
-  {path:"overview" , component:OverviewComponent},
-  {path:"profile" , component:ProfileComponent},
-  {path:"withdraw" , component:WithdrawComponent},
-  {path:"overview/studentSubscribe" , component:StudantSubscribeComponent},
-  {path:"**" , component:NotFoundComponent}
-
+  { path: "", redirectTo: "overview", pathMatch: "full" },
+  { path: "overview", component: OverviewComponent, data: { title: "Overview" } },
+  { path: "profile", component: ProfileComponent, data: { title: "Profile" } },
+  { path: "withdraw", component: WithdrawComponent, data: { title: "Withdraw" } },
+  { path: "overview/studentSubscribe", component: StudantSubscribeComponent, data: { title: "Student Subscribe" } },
+  { path: "**", component: NotFoundComponent, data: { title: "Not Found" } }
 ];
 
 @NgModule({

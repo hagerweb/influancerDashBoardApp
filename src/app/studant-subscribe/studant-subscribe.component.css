@@ -112,6 +112,9 @@
 
 
 @media (max-width: 768px) {
+  .container{
+    margin-top: 33.5px;
+  }
   .nav-item .nav-link {
     font-size: 12px !important;
     padding: 4px 12px;

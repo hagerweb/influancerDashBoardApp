@@ -204,7 +204,7 @@ color: #4a54ae;
 }
 .stud-div .stud-li  span{
   font-weight: 500;
-  
+
 
 }
 
@@ -219,22 +219,52 @@ color: #4a54ae;
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .item1 .card-title, .item2 .card-title{
+    font-size: 14px;
+  }
+  .item1 .card-text{
+
+    font-weight: 700;
+    font-size: 64px;
+    color: #4a54ae;
+  }
   .item1, .item2, .item3 {
     width: 100%;
     margin-left: 0;
-    padding: 15px;
+    padding: 5px;
   }
-
+  .card-body{
+    margin-top: 0px !important;
+  }
+  .card-promo svg{
+    width: 30px;
+    height: 30px;
+  }
   .chart-div {
     width: 100%;
     height: auto;
   }
-
+  br{
+    display: none;
+  }
   .item1 .card-text {
     font-size: 48px;
   }
+  .item2 p {
+    font-size: 14px;
+}
 
   .stud-div {
     padding: 24px 10px;
+  }
+
+
+  .item2::before {
+
+    top: 50px;
+    right: 12px;
+  }
+  .overview-div{
+    margin-top: 32px;
   }
 }

@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { SelectionService } from '../services/selection.service';
+
 
 @Component({
   selector: 'app-studant-subscribe',
@@ -6,11 +8,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./studant-subscribe.component.css']
 })
 export class StudantSubscribeComponent {
+  constructor(private selectionService: SelectionService) {}
+
   tabs = [
     {
       id: 'month',
       label: 'Month',
-      active: true, // Default selected tab
+      active: true,
       data: [
         { number: '10 Students', month: 'April', start: '02/04/2024', end: '02/05/2024' },
         { number: '20 Students', month: 'May', start: '02/05/2024', end: '02/06/2024' },
@@ -42,9 +46,10 @@ export class StudantSubscribeComponent {
     }
   ];
 
-  activeTab = this.tabs[0]; // Default active tab
+  activeTab = this.tabs[0];
 
   setActiveTab(tab: any) {
     this.activeTab = tab;
+    this.selectionService.setSelectedFilter(tab.label);
   }
 }

@@ -215,3 +215,34 @@ color: white !important;
 
   color: #f4812d !important;
 }
+@media (max-width: 767px) {
+  .personal-dte{
+    width: 100%;
+  }
+  .item01 .col-md-9{
+    margin-top: 40px;
+
+  }
+  .item01 .col-md-3{
+    margin-top: 32px;
+
+  }
+  .item01 .head-div h5{
+    font-weight: 500;
+    font-size: 24px;
+    text-align: center;
+    color: #000;
+  }
+  .social-media .col-md-4{
+    margin-top: 18px;
+
+  }
+  .item02 , .item03{
+    padding-inline : 0.5rem !important;
+    width: 105% !important;
+  }
+  .item032{
+    flex-direction: column-reverse;
+  }
+
+}
